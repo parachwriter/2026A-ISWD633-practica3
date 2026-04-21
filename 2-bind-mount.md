@@ -21,19 +21,20 @@ PS C:\Users\Usuario> docker run -d --name prac3 -p 8080:80 --mount type=bind,sou
 ````
 
 ### ¿Qué sucede al ingresar al servidor de nginx?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+como no hay contenido en la carpeta html de nginx me apareción 403 forbidden
 
 ### ¿Qué pasa con el archivo index.html del contenedor?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+
+El archivo index.html original del contenedor deja de estar disponible, ya que la carpeta montada desde el host sobrescribe la ruta /usr/share/nginx/html. Por lo tanto, nginx ya no utiliza el archivo interno de la imagen, sino únicamente los archivos que existan en la carpeta del host.
+
 
 ### Ir a https://html5up.net/ y descargar un template gratuito, descomprirlo dentro de tu computador en la carpeta html
 ### ¿Qué sucede al ingresar al servidor de nginx?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
-
+Ahora carga el archivo que ingresamos al directorio definido en el comando de arriba 
 ### Eliminar el contenedor
 # COMPLETAR CON EL COMANDO
 
 ### ¿Qué sucede al crear nuevamente un contenedor montado al directorio definidos anteriormente?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+Los archivos del directorio externo se conservan
 
 
