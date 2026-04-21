@@ -32,7 +32,7 @@ El archivo index.html original del contenedor deja de estar disponible, ya que l
 ### ¿Qué sucede al ingresar al servidor de nginx?
 Ahora carga el archivo que ingresamos al directorio definido en el comando de arriba 
 ### Eliminar el contenedor
-# COMPLETAR CON EL COMANDO
+docker rm -f prac3
 
 ### ¿Qué sucede al crear nuevamente un contenedor montado al directorio definidos anteriormente?
 Los archivos del directorio externo se conservan
