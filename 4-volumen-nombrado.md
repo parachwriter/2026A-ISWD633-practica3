@@ -74,6 +74,12 @@ docker volume create drupal-sites
 docker run -d --name server-drupal --publish published=9700,target=80 -v <nombre volumen>:<ruta contenedor> -v <nombre volumen>:<ruta contenedor> -v <nombre volumen>:<ruta contenedor> -v <nombre volumen>:<ruta contenedor> --network net-drupal drupal
 ```
 
+
+````
+
+docker run -d --name server-drupal --publish published=9700,target=80 -v drupal-modules:/var/www/html/modules -v drupal-profiles:/var/www/html/profiles -v drupal-themes:/var/www/html/themes -v drupal-sites:/var/www/html/sites --network net-drupal drupal
+````
+
 ### Ingrese al server-drupal y siga el paso a paso para la instalación.
 
 
